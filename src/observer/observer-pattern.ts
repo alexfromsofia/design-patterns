@@ -18,7 +18,9 @@ export class WeatherObserver {
   }
 
   public remove(id: IDisplay["id"]) {
-    this.observablesList.filter(({ id: obsId }) => id !== obsId);
+    this.observablesList = this.observablesList.filter(
+      ({ id: obsId }) => id !== obsId
+    );
   }
 
   public setNewState(temperature: number) {
@@ -27,6 +29,10 @@ export class WeatherObserver {
       temperature,
     };
     this.notify();
+  }
+
+  public getList() {
+    return this.observablesList;
   }
 
   public notify() {
