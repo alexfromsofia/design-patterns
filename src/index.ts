@@ -1,7 +1,8 @@
-import { initObserver } from "./observer/observer-pattern";
+import { initObserver } from "./observer";
+import { initStrategy } from "./strategy";
 
 const init = () => {
-  initObserver();
+  initStrategy();
 };
 
 init();

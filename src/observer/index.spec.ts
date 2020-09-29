@@ -1,4 +1,4 @@
-import { WeatherObserver, DisplayObservable } from "./observer-pattern";
+import { WeatherObserver, DisplayObservable } from "./";
 
 describe("Observer Pattern", function () {
   const station = new WeatherObserver();
